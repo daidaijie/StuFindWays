@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="汕大垃圾小分队">
+    <title>汕大路线规划</title>
+    <link href="css/index.css" type="text/css" rel="stylesheet"  />
+    <link type="text/css" rel="stylesheet" href="iconfont/iconfont.css"  />
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+
+<body>
+    <div class="body-box clearfix">
+        <div class="map" >
+            <canvas id="from-42-to-47" class="from-42-to-47" width="60" height="100"></canvas>
+            <canvas id="from-20-to-47" class="from-20-to-47" width="80" height="50"></canvas>
+            <canvas id="from-20-to-21" class="from-20-to-21" width="80" height="50"></canvas>
+            <canvas id="from-17-to-20" class="from-17-to-20" width="80" height="100"></canvas>
+            <canvas id="from-17-to-42" class="from-17-to-42" width="130" height="50"></canvas>
+            <canvas id="from-17-to-18" class="from-17-to-18" width="30" height="80"></canvas>
+            <canvas id="from-18-to-19" class="from-18-to-19" width="30" height="80"></canvas>
+            <canvas id="from-12-to-17" class="from-12-to-17" width="140" height="80"></canvas>
+            <canvas id="from-14-to-19" class="from-14-to-19" width="30" height="80"></canvas>
+            <canvas id="from-21-to-23" class="from-21-to-23" width="100" height="80"></canvas>
+            <canvas id="from-21-to-24" class="from-21-to-24" width="100" height="80"></canvas>
+            <canvas id="from-47-to-48" class="from-47-to-48" width="200" height="150"></canvas>
+            <canvas id="from-26-to-47" class="from-26-to-47" width="200" height="150"></canvas>
+            <canvas id="from-26-to-37" class="from-26-to-37" width="200" height="150"></canvas>
+            <canvas id="from-25-to-26" class="from-25-to-26" width="200" height="150"></canvas>
+            <canvas id="from-25-to-48" class="from-25-to-48" width="200" height="150"></canvas>
+            <canvas id="from-24-to-25" class="from-24-to-25" width="200" height="150"></canvas>
+            <canvas id="from-25-to-30" class="from-25-to-30" width="300" height="250"></canvas>
+            <canvas id="from-25-to-28" class="from-25-to-28" width="300" height="250"></canvas>
+            <canvas id="from-23-to-24" class="from-23-to-24" width="300" height="250"></canvas>
+            <canvas id="from-14-to-23" class="from-14-to-23" width="300" height="250"></canvas>
+            <canvas id="from-12-to-14" class="from-12-to-14" width="300" height="250"></canvas>
+            <canvas id="from-14-to-22" class="from-14-to-22" width="300" height="250"></canvas>
+            <canvas id="from-33-to-34" class="from-33-to-34" width="60" height="70"></canvas>
+            <canvas id="from-1-to-41" class="from-1-to-41" width="540" height="100"></canvas>
+            <canvas id="from-1-to-2" class="from-1-to-2" width="60" height="50"></canvas>
+            <canvas id="from-1-to-3" class="from-1-to-3" width="78" height="97"></canvas>
+            <canvas id="from-3-to-4" class="from-3-to-4" width="83" height="83"></canvas>
+            <canvas id="from-4-to-16" class="from-4-to-16" width="131" height="63"></canvas>
+            <canvas id="from-16-to-42" class="from-16-to-42" width="90" height="90"></canvas>
+            <canvas id="from-16-to-43" class="from-16-to-43" width="50" height="50"></canvas>
+            <canvas id="from-42-to-43" class="from-42-to-43" width="80" height="100"></canvas>
+            <canvas id="from-17-to-43" class="from-17-to-43" width="120" height="120"></canvas>
+            <canvas id="from-16-to-17" class="from-16-to-17" width="80" height="120"></canvas>
+            <canvas id="from-17-to-42" class="from-17-to-42" width="128" height="85"></canvas>
+            <canvas id="from-3-to-5" class="from-3-to-5" width="109" height="80"></canvas>
+            <canvas id="from-15-to-17" class="from-15-to-17" width="109" height="50"></canvas>
+            <canvas id="from-12-to-15" class="from-12-to-15" width="109" height="110"></canvas>
+            <canvas id="from-4-to-17" class="from-4-to-17" width="80" height="100"></canvas>
+            <canvas id="from-5-to-15" class="from-5-to-15" width="120" height="80"></canvas>
+            <canvas id="from-5-to-6" class="from-5-to-6" width="80" height="80"></canvas>
+            <canvas id="from-6-to-8" class="from-6-to-8" width="80" height="80"></canvas>
+            <canvas id="from-6-to-7" class="from-6-to-7" width="80" height="80"></canvas>
+            <canvas id="from-12-to-13" class="from-12-to-13" width="160" height="160"></canvas>
+            <canvas id="from-11-to-13" class="from-11-to-13" width="160" height="160"></canvas>
+            <canvas id="from-10-to-11" class="from-10-to-11" width="160" height="160"></canvas>
+            <canvas id="from-8-to-10" class="from-8-to-10" width="160" height="160"></canvas>
+            <canvas id="from-8-to-15" class="from-8-to-15" width="160" height="160"></canvas>
+            <canvas id="from-9-to-10" class="from-9-to-10" width="160" height="160"></canvas>
+            <canvas id="from-7-to-9" class="from-7-to-9" width="160" height="160"></canvas>
+            <canvas id="from-33-to-34" class="from-33-to-34" width="70" height="40"></canvas>
+            <canvas id="from-31-to-33" class="from-31-to-33" width="70" height="47"></canvas>
+            <canvas id="from-29-to-31" class="from-29-to-31" width="40" height="63"></canvas>
+            <canvas id="from-29-to-32" class="from-29-to-32" width="40" height="63"></canvas>
+            <canvas id="from-29-to-30" class="from-29-to-30" width="50" height="50"></canvas>
+            <canvas id="from-28-to-30" class="from-28-to-30" width="70" height="30"></canvas>
+            <canvas id="from-28-to-29" class="from-28-to-29" width="110" height="60"></canvas>
+            <canvas id="from-24-to-28" class="from-24-to-28" width="50" height="65"></canvas>
+            <canvas id="from-24-to-27" class="from-24-to-27" width="40" height="70"></canvas>
+            <canvas id="from-29-to-35" class="from-29-to-35" width="90" height="100"></canvas>
+            <canvas id="from-30-to-37" class="from-30-to-37" width="90" height="110"></canvas>
+            <canvas id="from-22-to-31" class="from-22-to-31" width="210" height="140"></canvas>
+            <canvas id="from-27-to-31" class="from-27-to-31" width="210" height="140"></canvas>
+            <canvas id="from-22-to-27" class="from-22-to-27" width="210" height="140"></canvas>
+            <canvas id="from-40-to-41" class="from-40-to-41" width="100" height="100"></canvas>
+            <canvas id="from-40-to-45" class="from-40-to-45" width="220" height="100"></canvas>
+            <canvas id="from-44-to-45" class="from-44-to-45" width="40" height="100"></canvas>
+            <canvas id="from-44-to-46" class="from-44-to-46" width="40" height="100"></canvas>
+            <canvas id="from-43-to-46" class="from-43-to-46" width="40" height="100"></canvas>
+            <canvas id="from-39-to-42" class="from-39-to-42" width="120" height="120"></canvas>
+            <canvas id="from-37-to-39" class="from-37-to-39" width="50" height="50"></canvas>
+            <canvas id="from-35-to-37" class="from-35-to-37" width="50" height="60"></canvas>
+            <canvas id="from-36-to-37" class="from-36-to-37" width="60" height="60"></canvas>
+            <canvas id="from-36-to-38" class="from-36-to-38" width="60" height="60"></canvas>
+            <canvas id="from-38-to-40" class="from-38-to-40" width="150" height="230"></canvas>
+            <canvas id="from-38-to-41" class="from-38-to-41" width="150" height="230"></canvas>
+            
+            <canvas id="from-4-to-15" class="from-4-to-15" width="150" height="230"></canvas>
+            <canvas id="from-6-to-15" class="from-6-to-15" width="150" height="230"></canvas>
+            <canvas id="from-18-to-20" class="from-18-to-20" width="150" height="230"></canvas>
+            <canvas id="from-19-to-21" class="from-19-to-21" width="150" height="230"></canvas>
+            <canvas id="from-12-to-19" class="from-12-to-19" width="150" height="230"></canvas>
+            <canvas id="from-20-to-48" class="from-20-to-48" width="150" height="230"></canvas>
+            <canvas id="from-21-to-48" class="from-21-to-48" width="150" height="230"></canvas>
+            <canvas id="from-22-to-24" class="from-22-to-24" width="150" height="230"></canvas>
+            <canvas id="from-35-to-36" class="from-35-to-36" width="150" height="230"></canvas>
+            <canvas id="from-39-to-48" class="from-39-to-48" width="150" height="230"></canvas>
+            <canvas id="from-42-to-48" class="from-42-to-48" width="150" height="230"></canvas>
+        </div>
+        <div class="select-box">
+            <label>起始点：</label>
+            <select class="start" name="start" id="startPlace" onchange='startChange(this[selectedIndex].value);'>
+                <option value="0">--请选择起始点--</option>
+                <option value="place-1">校门</option>
+                <option value="place-2">新体育馆</option>
+                <option value="place-3">真理钟</option>
+                <option value="place-4">图书馆</option>
+                <option value="place-5">东门</option>
+                <option value="place-6">保卫处</option>
+                <option value="place-7">至诚书院</option>
+                <option value="place-8">第四饭堂</option>
+                <option value="place-9">留学生宿舍</option>
+                <option value="place-10">G座宿舍</option>
+                <option value="place-11">气膜篮球场</option>
+                <option value="place-12">DG教学楼</option>
+                <option value="place-13">风洞实验室</option>
+                <option value="place-14">涂鸦墙</option>
+                <option value="place-15">E座教学楼</option>
+                <option value="place-16">理院实验室</option>
+                <option value="place-17">校训碑</option>
+                <option value="place-18">旧行政楼</option>
+                <option value="place-19">理学院</option>
+                <option value="place-20">大礼堂</option>
+                <option value="place-21">新行政楼</option>
+                <option value="place-22">阿彬发屋</option>
+                <option value="place-23">科报厅</option>
+                <option value="place-24">二三食堂</option>
+                <option value="place-25">金三角</option>
+                <option value="place-26">篮球场</option>
+                <option value="place-27">研究生宿舍</option>
+                <option value="place-28">旧宿舍群</option>
+                <option value="place-29">EF宿舍</option>
+                <option value="place-30">旧体育馆</option>
+                <option value="place-31">ACC别墅</option>
+                <option value="place-32">水库</option>
+                <option value="place-33">艺术学院</option>
+                <option value="place-34">ACC酒店</option>
+                <option value="place-35">游泳池</option>
+                <option value="place-36">校医院</option>
+                <option value="place-37">789楼</option>
+                <option value="place-38">艺教中心</option>
+                <option value="place-39">教工宿舍</option>
+                <option value="place-40">知行 思源</option>
+                <option value="place-41">西门</option>
+                <option value="place-42">工会</option>
+                <option value="place-43">弘毅书院</option>
+                <option value="place-44">网络中心</option>
+                <option value="place-45">汕大附小</option>
+                <option value="place-46">新医学楼</option>
+                <option value="place-47">荷花池</option>
+                <option value="place-48">网球场</option>
+            </select>
+            <label>结束点：</label>
+            <select class="end" name="end" id="endPlace" onchange='startChange(this[selectedIndex].value);'>
+                <option value="0">--请选择目的地--</option>
+                <option value="place-1">校门</option>
+                <option value="place-2">新体育馆</option>
+                <option value="place-3">真理钟</option>
+                <option value="place-4">图书馆</option>
+                <option value="place-5">东门</option>
+                <option value="place-6">保卫处</option>
+                <option value="place-7">至诚书院</option>
+                <option value="place-8">第四饭堂</option>
+                <option value="place-9">留学生宿舍</option>
+                <option value="place-10">G座宿舍</option>
+                <option value="place-11">气膜篮球场</option>
+                <option value="place-12">DG教学楼</option>
+                <option value="place-13">风洞实验室</option>
+                <option value="place-14">涂鸦墙</option>
+                <option value="place-15">E座教学楼</option>
+                <option value="place-16">理院实验室</option>
+                <option value="place-17">校训碑</option>
+                <option value="place-18">旧行政楼</option>
+                <option value="place-19">理学院</option>
+                <option value="place-20">大礼堂</option>
+                <option value="place-21">新行政楼</option>
+                <option value="place-22">阿彬发屋</option>
+                <option value="place-23">科报厅</option>
+                <option value="place-24">二三食堂</option>
+                <option value="place-25">金三角</option>
+                <option value="place-26">篮球场</option>
+                <option value="place-27">研究生宿舍</option>
+                <option value="place-28">旧宿舍群</option>
+                <option value="place-29">EF宿舍</option>
+                <option value="place-30">旧体育馆</option>
+                <option value="place-31">ACC别墅</option>
+                <option value="place-32">水库</option>
+                <option value="place-33">艺术学院</option>
+                <option value="place-34">ACC酒店</option>
+                <option value="place-35">游泳池</option>
+                <option value="place-36">校医院</option>
+                <option value="place-37">789楼</option>
+                <option value="place-38">艺教中心</option>
+                <option value="place-39">教工宿舍</option>
+                <option value="place-40">知行 思源</option>
+                <option value="place-41">西门</option>
+                <option value="place-42">工会</option>
+                <option value="place-43">弘毅书院</option>
+                <option value="place-44">网络中心</option>
+                <option value="place-45">汕大附小</option>
+                <option value="place-46">新医学楼</option>
+                <option value="place-47">荷花池</option>
+                <option value="place-48">网球场</option>
+            </select>
+            <ul>
+                <li class="location-1">
+                    <input type="checkbox" name="place" id="place-1" />
+                    <label id="place-L-1" for="place-1">校门</label>
+                    <i class="iconfont icon-location2"></i>
+                </li>
+                <li class="location-2">
+                    <input type="checkbox" name="place" id="place-2" />
+                    <label id="place-L-2" for="place-2">新体育馆</label>
+                    <i class="iconfont icon-location2"></i>
+                </li>
+                 <li class="location-3">
+                    <input type="checkbox" name="place" id="place-3" />
+                    <label id="place-L-3" for="place-3">真理钟</label>
+                    <i class="iconfont icon-location2"></i>
+                </li>
+                 <li class="location-4">
+                    <input type="checkbox" name="place" id="place-4" />
+                    <label id="place-L-4" for="place-4">图书馆</label>
+                    <i class="iconfont icon-location2"></i>
+                </li>
+                 <li class="location-5">
+                    <input type="checkbox" name="place" id="place-5" />
+                    <label id="place-L-5" for="place-5">东门</label>
+                    <i class="iconfont icon-location2"></i>
+                </li>
+                 <li class="location-6">
+                    <input type="checkbox" name="place" id="place-6" />
+                    <label id="place-L-6" for="place-6">保卫处</label>
+                    <i class="iconfont icon-location2"></i>
+                </li>
+                 <li class="location-7">
+                    <input type="checkbox" name="place" id="place-7" />
+                    <label id="place-L-7" for="place-7">至诚书院</label>
+                    <i class="iconfont icon-location2"></i>
+                </li>
+                 <li class="location-8">
+                    <input type="checkbox" name="place" id="place-8" />
+                    <label id="place-L-8" for="place-8">第四饭堂</label>
+                    <i class="iconfont icon-location2"></i>
+                </li>
+                 <li class="location-9">
+                    <input type="checkbox" name="place" id="place-9" />
+                    <label id="place-L-9" for="place-9">留学生宿舍</label>
+                    <i class="iconfont icon-location2"></i>
+                </li>
+                 <li class="location-10">
+                    <input type="checkbox" name="place" id="place-10" />
+                    <label id="place-L-10" for="place-10">G座宿舍</label>
+                    <i class="iconfont icon-location2"></i>
+                </li>
+                 <li class="location-11">
+                    <input type="checkbox" name="place" id="place-11" />
+                    <label id="place-L-11" for="place-11">气膜篮球场</label>
+                    <i class="iconfont icon-location2"></i>
+                </li>
+                 <li class="location-12">
+                    <input type="checkbox" name="place" id="place-12" />
+                    <label id="place-L-12" for="place-12">DG教学楼</label>
+                    <i class="iconfont icon-location2"></i>
+                </li>
+                 <li class="location-13">
+                    <input type="checkbox" name="place" id="place-13" />
+                    <label id="place-L-13" for="place-13">风洞实验室</label>
+                    <i class="iconfont icon-location2"></i>
+                </li>
+                 <li class="location-14">
+                    <input type="checkbox" name="place" id="place-14" />
+                    <label id="place-L-14" for="place-14">涂鸦墙</label>
+                    <i class="iconfont icon-location2"></i>
+                </li>
+                 <li class="location-15">
+                    <input type="checkbox" name="place" id="place-15" />
+                    <label id="place-L-15" for="place-15">E座教学楼</label>
+                    <i class="iconfont icon-location2"></i>
+                </li>
+                <li class="location-16">
+                    <input type="checkbox" name="place" id="place-16" />
+                    <label id="place-L-16" for="place-16">理院实验室</label>
+                    <i class="iconfont icon-location2"></i>
+                </li>
+                <li class="location-17">
+                    <input type="checkbox" name="place" id="place-17" />
+                    <label id="place-L-17" for="place-17">校训碑</label>
+                    <i class="iconfont icon-location2"></i>
+                </li>
+                <li class="location-18">
+                    <input type="checkbox" name="place" id="place-18" />
+                    <label id="place-L-18" for="place-18">旧行政楼</label>
+                    <i class="iconfont icon-location2"></i>
+                </li>
+                <li class="location-19">
+                    <input type="checkbox" name="place" id="place-19" />
+                    <label id="place-L-19" for="place-19">理学院</label>
+                    <i class="iconfont icon-location2"></i>
+                </li>
+                <li class="location-20">
+                    <input type="checkbox" name="place" id="place-20" />
+                    <label id="place-L-20" for="place-20">大礼堂</label>
+                    <i class="iconfont icon-location2"></i>
+                </li>
+                <li class="location-21">
+                    <input type="checkbox" name="place" id="place-21" />
+                    <label id="place-L-21" for="place-21">新行政楼</label>
+                    <i class="iconfont icon-location2"></i>
+                </li>
+                <li class="location-22">
+                    <input type="checkbox" name="place" id="place-22" />
+                    <label id="place-L-22" for="place-22">阿彬发屋</label>
+                    <i class="iconfont icon-location2"></i>
+                </li>
+                <li class="location-23">
+                    <input type="checkbox" name="place" id="place-23" />
+                    <label id="place-L-23" for="place-23">科报厅</label>
+                    <i class="iconfont icon-location2"></i>
+                </li>
+                <li class="location-24">
+                    <input type="checkbox" name="place" id="place-24" />
+                    <label id="place-L-24" for="place-24">二三食堂</label>
+                    <i class="iconfont icon-location2"></i>
+                </li>
+                <li class="location-25">
+                    <input type="checkbox" name="place" id="place-25" />
+                    <label id="place-L-25" for="place-25">金三角</label>
+                    <i class="iconfont icon-location2"></i>
+                </li>
+                <li class="location-26">
+                    <input type="checkbox" name="place" id="place-26" />
+                    <label id="place-L-26" for="place-26">篮球场</label>
+                    <i class="iconfont icon-location2"></i>
+                </li>
+                <li class="location-27">
+                    <input type="checkbox" name="place" id="place-27" />
+                    <label id="place-L-27" for="place-27">研究生宿舍</label>
+                    <i class="iconfont icon-location2"></i>
+                </li>
+                <li class="location-28">
+                    <input type="checkbox" name="place" id="place-28" />
+                    <label id="place-L-28" for="place-28">旧宿舍群</label>
+                    <i class="iconfont icon-location2"></i>
+                </li>
+                <li class="location-29">
+                    <input type="checkbox" name="place" id="place-29" />
+                    <label id="place-L-29" for="place-29">EF宿舍</label>
+                    <i class="iconfont icon-location2"></i>
+                </li>
+                <li class="location-30">
+                    <input type="checkbox" name="place" id="place-30" />
+                    <label id="place-L-30" for="place-30">旧体育馆</label>
+                    <i class="iconfont icon-location2"></i>
+                </li>
+                <li class="location-31">
+                    <input type="checkbox" name="place" id="place-31" />
+                    <label id="place-L-31" for="place-31">ACC别墅</label>
+                    <i class="iconfont icon-location2"></i>
+                </li>
+                <li class="location-32">
+                    <input type="checkbox" name="place" id="place-32" />
+                    <label id="place-L-32" for="place-32">水库</label>
+                    <i class="iconfont icon-location2"></i>
+                </li>
+                <li class="location-33">
+                    <input type="checkbox" name="place" id="place-33" />
+                    <label id="place-L-33" for="place-33">艺术学院</label>
+                    <i class="iconfont icon-location2"></i>
+                </li>
+                <li class="location-34">
+                    <input type="checkbox" name="place" id="place-34" />
+                    <label id="place-L-34" for="place-34">ACC酒店</label>
+                    <i class="iconfont icon-location2"></i>
+                </li>
+                <li class="location-35">
+                    <input type="checkbox" name="place" id="place-35" />
+                    <label id="place-L-35" for="place-35">游泳池</label>
+                    <i class="iconfont icon-location2"></i>
+                </li>
+                <li class="location-36">
+                    <input type="checkbox" name="place" id="place-36" />
+                    <label id="place-L-36" for="place-36">校医院</label>
+                    <i class="iconfont icon-location2"></i>
+                </li>
+                <li class="location-37">
+                    <input type="checkbox" name="place" id="place-37" />
+                    <label id="place-L-37" for="place-37">789楼</label>
+                    <i class="iconfont icon-location2"></i>
+                </li>
+                <li class="location-38">
+                    <input type="checkbox" name="place" id="place-38" />
+                    <label id="place-L-38" for="place-38">艺教中心</label>
+                    <i class="iconfont icon-location2"></i>
+                </li>
+                <li class="location-39">
+                    <input type="checkbox" name="place" id="place-39" />
+                    <label id="place-L-39" for="place-39">教工宿舍</label>
+                    <i class="iconfont icon-location2"></i>
+                </li>
+                <li class="location-40">
+                <input type="checkbox" name="place" id="place-40" />
+                    <label id="place-L-40" for="place-40">知行 思源</label>
+                    <i class="iconfont icon-location2"></i>
+                </li>
+                <li class="location-41">
+                <input type="checkbox" name="place" id="place-41" />
+                    <label id="place-L-41" for="place-41">西门</label>
+                    <i class="iconfont icon-location2"></i>
+                </li>
+                <li class="location-42">
+                <input type="checkbox" name="place" id="place-42" />
+                    <label id="place-L-42" for="place-42">工会</label>
+                    <i class="iconfont icon-location2"></i>
+                </li>
+                <li class="location-43">
+                <input type="checkbox" name="place" id="place-43" />
+                    <label id="place-L-43" for="place-43">弘毅书院</label>
+                    <i class="iconfont icon-location2"></i>
+                </li>
+                <li class="location-44">
+                <input type="checkbox" name="place" id="place-44" />
+                    <label id="place-L-44" for="place-44">网络中心</label>
+                    <i class="iconfont icon-location2"></i>
+                </li>
+                <li class="location-45">
+                <input type="checkbox" name="place" id="place-45" />
+                    <label id="place-L-45" for="place-45">汕大附小</label>
+                    <i class="iconfont icon-location2"></i>
+                </li>
+                <li class="location-46">
+                <input type="checkbox" name="place" id="place-46" />
+                    <label id="place-L-46" for="place-46">新医学楼</label>
+                    <i class="iconfont icon-location2"></i>
+                </li>
+                <li class="location-47">
+                <input type="checkbox" name="place" id="place-47" />
+                    <label id="place-L-47" for="place-47">荷花池</label>
+                    <i class="iconfont icon-location2"></i>
+                </li>
+                <li class="location-48">
+                <input type="checkbox" name="place" id="place-48" />
+                    <label id="place-L-48" for="place-48">网球场</label>
+                    <i class="iconfont icon-location2"></i>
+                </li>
+            </ul>
+            <div class="button-box">
+            <button type="button" class="b-clear" onclick="javascript:window.location.reload();">清空</button>
+            <button type="button" class="b-begin" onclick='startShortPath();'>开始规划</button>
+            <button type="button" class="b-consult" onclick="javascript:consultWindow();">咨询客服</button>
+            <textarea id="resultArea" class="resultArea" readonly="true"></textarea>
+            
+        </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/canvas.js"></script>
+    <script type="text/javascript" src="js/Dijkstra.js"></script>
+</body>
+</html>
+

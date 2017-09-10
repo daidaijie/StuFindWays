@@ -1,0 +1,305 @@
+@charset "utf-8";
+
+*{padding: 0;margin: 0;}
+ul{list-style: none;}
+body{background-color: #ccc;}
+.body-box{width:1300px;height: 672px;position: absolute;left: 50%;top: 50%;margin-left: -650px;margin-top: -336px;}
+.map{width: 952px;height: 672px;background: url(../images/background-2.jpg) no-repeat center/cover;float: left;position: relative;}
+.select-box{width: 346px;height: 672px;float: left;background-color: white;}
+.clearfix:after{content: "";display: block;clear: both;}
+
+.select-box > label{margin: 5px 0 0 20px;font-size: 14px;}
+.select-box select{display:inline-block;width: 150px;height: 20px;padding-left: 20px;margin:5px 80px 5px 20px;}
+.select-box ul{width: 328px;height: 265px;margin: auto;border:1px solid #666;}
+.select-box li{float: left;position: relative;}
+.select-box ul li > label{height:20px;display: block;width: 75px;text-align: center;border-radius: 5px;background-color: #5b68ac;color: white;font-size: 12px;line-height: 20px;border: 1px solid #fff;margin-right: 5px;}
+
+.select-box .button-box{width: 328px;height: 340px;margin: auto;position: relative;}
+.select-box .button-box .b-clear{width: 90px;height:25px;border: none;color: white;background-color: #00bd9c;border-radius: 10px;margin-left: 10px}
+.select-box .button-box .b-begin{width: 90px;height: 25px;border: none;border-radius: 10px;margin: 20px 15px 10px 15px;background-color: #00bd9c;color: white;}
+.select-box .button-box .b-consult{width: 90px;height: 25px;border: none;border-radius: 10px;background-color: #00bd9c;color: white;}
+.select-box input{position: absolute;}
+
+
+.select-box .button-box .resultArea{display: block; width: 300px;height: 270px;margin-left: 13px;border-radius: 2px;border:1px solid #ccc;}
+.select-box ul li > label:hover{opacity: 0.8;}
+.select-box .location-1 .iconfont{position: absolute;left: -245px;top: 540px;color: #5b68ac;font-size: 26px;display: none;}
+.select-box .location-1 input:hover ~ i{display: block;}
+.select-box li input:checked + label{background-color: #64C333;}
+.select-box  .location-1 input:checked ~ i{display: block;}
+
+.select-box .location-2 .iconfont{position: absolute;left: -281px;top: 530px;color: #5b68ac;font-size: 26px;display: none;}
+.select-box .location-2 input:hover ~ i{display: block;}
+.select-box  .location-2 input:checked ~ i{display: block;}
+
+.select-box .location-3 .iconfont{position: absolute;left: -469px;top: 453px;color: #5b68ac;font-size: 26px;display: none;}
+.select-box .location-3 input:hover ~ i{display: block;}
+.select-box  .location-3 input:checked ~ i{display: block;}
+
+.select-box .location-4 .iconfont{position: absolute;left: -592px;top: 403px;color: #5b68ac;font-size: 26px;display: none;}
+.select-box .location-4 input:hover ~ i{display: block;}
+.select-box  .location-4 input:checked ~ i{display: block;}
+
+.select-box .location-5 .iconfont{position: absolute;left: -233px;top: 381px;color: #5b68ac;font-size: 26px;display: none;}
+.select-box .location-5 input:hover ~ i{display: block;}
+.select-box  .location-5 input:checked ~ i{display: block;}
+
+.select-box .location-6 .iconfont{position: absolute;left: -330px;top: 350px;color: #5b68ac;font-size: 26px;display: none;}
+.select-box .location-6 input:hover ~ i{display: block;}
+.select-box  .location-6 input:checked ~ i{display: block;}
+
+.select-box .location-7 .iconfont{position: absolute;left: -383px;top: 346px;color: #5b68ac;font-size: 26px;display: none;}
+.select-box .location-7 input:hover ~ i{display: block;}
+.select-box  .location-7 input:checked ~ i{display: block;}
+
+.select-box .location-8 .iconfont{position: absolute;left: -512px;top: 322px;color: #5b68ac;font-size: 26px;display: none;}
+.select-box .location-8 input:hover ~ i{display: block;}
+.select-box  .location-8 input:checked ~ i{display: block;} 
+
+.select-box .location-9 .iconfont{position: absolute;left: -203px;top: 294px;color: #5b68ac;font-size: 26px;display: none;}
+.select-box .location-9 input:hover ~ i{display: block;}
+.select-box  .location-9 input:checked ~ i{display: block;}
+
+.select-box .location-10 .iconfont{position: absolute;left: -306px;top: 271px;color: #5b68ac;font-size: 26px;display: none;}
+.select-box .location-10 input:hover ~ i{display: block;}
+.select-box  .location-10 input:checked ~ i{display: block;}
+
+.select-box .location-11 .iconfont{position: absolute;left: -430px;top: 252px;color: #5b68ac;font-size: 26px;display: none;}
+.select-box .location-11 input:hover ~ i{display: block;}
+.select-box  .location-11 input:checked ~ i{display: block;}
+
+.select-box .location-12 .iconfont{position: absolute;left: -553px;top: 241px;color: #5b68ac;font-size: 26px;display: none;}
+.select-box .location-12 input:hover ~ i{display: block;}
+.select-box  .location-12 input:checked ~ i{display: block;}
+
+.select-box .location-13 .iconfont{position: absolute;left: -285px;top: 214px;color: #5b68ac;font-size: 26px;display: none;}
+.select-box .location-13 input:hover ~ i{display: block;}
+.select-box  .location-13 input:checked ~ i{display: block;}
+
+.select-box .location-14 .iconfont{position: absolute;left: -462px;top: 131px;color: #5b68ac;font-size: 26px;display: none;}
+.select-box .location-14 input:hover ~ i{display: block;}
+.select-box  .location-14 input:checked ~ i{display: block;}
+
+.select-box .location-15 .iconfont{position: absolute;left: -497px;top: 300px;color: #5b68ac;font-size: 26px;display: none;}
+.select-box .location-15 input:hover ~ i{display: block;}
+.select-box  .location-15 input:checked ~ i{display: block;}
+
+.select-box .location-16 .iconfont{position: absolute;left: -685px;top: 356px;color: #5b68ac;font-size: 26px;display: none;}
+.select-box .location-16 input:hover ~ i{display: block;}
+.select-box  .location-16 input:checked ~ i{display: block;}
+
+.select-box .location-17 .iconfont{position: absolute;left: -395px;top: 251px;color: #5b68ac;font-size: 26px;display: none;}
+.select-box .location-17 input:hover ~ i{display: block;}
+.select-box  .location-17 input:checked ~ i{display: block;}
+
+.select-box .location-18 .iconfont{position: absolute;left: -470px;top: 199px;color: #5b68ac;font-size: 26px;display: none;}
+.select-box .location-18 input:hover ~ i{display: block;}
+.select-box  .location-18 input:checked ~ i{display: block;}
+
+.select-box .location-19 .iconfont{position: absolute;left: -544px;top: 154px;color: #5b68ac;font-size: 26px;display: none;}
+.select-box .location-19 input:hover ~ i{display: block;}
+.select-box  .location-19 input:checked ~ i{display: block;}
+
+.select-box .location-20 .iconfont{position: absolute;left: -694px;top: 184px;color: #5b68ac;font-size: 26px;display: none;}
+.select-box .location-20 input:hover ~ i{display: block;}
+.select-box  .location-20 input:checked ~ i{display: block;}
+
+.select-box .location-21 .iconfont{position: absolute;left: -422px;top: 126px;color: #5b68ac;font-size: 26px;display: none;}
+.select-box .location-21 input:hover ~ i{display: block;}
+.select-box  .location-21 input:checked ~ i{display: block;}
+
+.select-box .location-22 .iconfont{position: absolute;left: -502px;top: 27px;color: #5b68ac;font-size: 26px;display: none;}
+.select-box .location-22 input:hover ~ i{display: block;}
+.select-box  .location-22 input:checked ~ i{display: block;}
+
+.select-box .location-23 .iconfont{position: absolute;left: -611px;top: 77px;color: #5b68ac;font-size: 26px;display: none;}
+.select-box .location-23 input:hover ~ i{display: block;}
+.select-box  .location-23 input:checked ~ i{display: block;}
+
+.select-box .location-24 .iconfont{position: absolute;left: -732px;top: 69px;color: #5b68ac;font-size: 26px;display: none;}
+.select-box .location-24 input:hover ~ i{display: block;}
+.select-box  .location-24 input:checked ~ i{display: block;}
+
+.select-box .location-25 .iconfont{position: absolute;left: -524px;top: 44px;color: #5b68ac;font-size: 26px;display: none;}
+.select-box .location-25 input:hover ~ i{display: block;}
+.select-box  .location-25 input:checked ~ i{display: block;}
+
+.select-box .location-26 .iconfont{position: absolute;left: -623px;top: 78px;color: #5b68ac;font-size: 26px;display: none;}
+.select-box .location-26 input:hover ~ i{display: block;}
+.select-box  .location-26 input:checked ~ i{display: block;}
+
+.select-box .location-27 .iconfont{position: absolute;left: -627px;top: -15px;color: #5b68ac;font-size: 26px;display: none;}
+.select-box .location-27 input:hover ~ i{display: block;}
+.select-box  .location-27 input:checked ~ i{display: block;}
+
+.select-box .location-28 .iconfont{position: absolute;left: -759px;top: -7px;color: #5b68ac;font-size: 26px;display: none;}
+.select-box .location-28 input:hover ~ i{display: block;}
+.select-box  .location-28 input:checked ~ i{display: block;}
+
+.select-box .location-29 .iconfont{position: absolute;left: -602px;top: -72px;color: #5b68ac;font-size: 26px;display: none;}
+.select-box .location-29 input:hover ~ i{display: block;}
+.select-box  .location-29 input:checked ~ i{display: block;}
+
+.select-box .location-30 .iconfont{position: absolute;left: -653px;top: -33px;color: #5b68ac;font-size: 26px;display: none;}
+.select-box .location-30 input:hover ~ i{display: block;}
+.select-box  .location-30 input:checked ~ i{display: block;}
+
+.select-box .location-31 .iconfont{position: absolute;left: -759px;top: -121px;color: #5b68ac;font-size: 26px;display: none;}
+.select-box .location-31 input:hover ~ i{display: block;}
+.select-box  .location-31 input:checked ~ i{display: block;}
+
+.select-box .location-32 .iconfont{position: absolute;left: -871px;top: -102px;color: #5b68ac;font-size: 26px;display: none;}
+.select-box .location-32 input:hover ~ i{display: block;}
+.select-box  .location-32 input:checked ~ i{display: block;}
+
+.select-box .location-33 .iconfont{position: absolute;left: -640px;top: -179px;color: #5b68ac;font-size: 26px;display: none;}
+.select-box .location-33 input:hover ~ i{display: block;}
+.select-box  .location-33 input:checked ~ i{display: block;}
+
+.select-box .location-34 .iconfont{position: absolute;left: -751px;top: -198px;color: #5b68ac;font-size: 26px;display: none;}
+.select-box .location-34 input:hover ~ i{display: block;}
+.select-box  .location-34 input:checked ~ i{display: block;}
+
+.select-box .location-35 .iconfont{position: absolute;left: -811px;top:-8px;color: #5b68ac;font-size: 26px;display: none;}
+.select-box .location-35 input:hover ~ i{display: block;}
+.select-box  .location-35 input:checked ~ i{display: block;}
+
+.select-box .location-36 .iconfont{position: absolute;left: -899px;top: 45px;color: #5b68ac;font-size: 26px;display: none;}
+.select-box .location-36 input:hover ~ i{display: block;}
+.select-box  .location-36 input:checked ~ i{display: block;}
+
+.select-box .location-37 .iconfont{position: absolute;left: -613px;top: 20px;color: #5b68ac;font-size: 26px;display: none;}
+.select-box .location-37 input:hover ~ i{display: block;}
+.select-box  .location-37 input:checked ~ i{display: block;}
+
+.select-box .location-38 .iconfont{position: absolute;left: -760px;top: 42px;color: #5b68ac;font-size: 26px;display: none;}
+.select-box .location-38 input:hover ~ i{display: block;}
+.select-box  .location-38 input:checked ~ i{display: block;}
+
+.select-box .location-39 .iconfont{position: absolute;left: -753px;top: 60px;color: #5b68ac;font-size: 26px;display: none;}
+.select-box .location-39 input:hover ~ i{display: block;}
+.select-box  .location-39 input:checked ~ i{display: block;}
+
+.select-box .location-40 .iconfont{position: absolute;left: -964px;top: 215px;color: #5b68ac;font-size: 26px;display: none;}
+.select-box .location-40 input:hover ~ i{display: block;}
+.select-box  .location-40 input:checked ~ i{display: block;}
+
+.select-box .location-41 .iconfont{position: absolute;left: -751px;top: 236px;color: #5b68ac;font-size: 26px;display: none;}
+.select-box .location-41 input:hover ~ i{display: block;}
+.select-box  .location-41 input:checked ~ i{display: block;}
+
+.select-box .location-42 .iconfont{position: absolute;left: -579px;top: 142px;color: #5b68ac;font-size: 26px;display: none;}
+.select-box .location-42 input:hover ~ i{display: block;}
+.select-box  .location-42 input:checked ~ i{display: block;}
+
+.select-box .location-43 .iconfont{position: absolute;left: -633px;top: 200px;color: #5b68ac;font-size: 26px;display: none;}
+.select-box .location-43 input:hover ~ i{display: block;}
+.select-box  .location-43 input:checked ~ i{display: block;}
+
+.select-box .location-44 .iconfont{position: absolute;left: -769px;top: 226px;color: #5b68ac;font-size: 26px;display: none;}
+.select-box .location-44 input:hover ~ i{display: block;}
+.select-box  .location-44 input:checked ~ i{display: block;}
+
+.select-box .location-45 .iconfont{position: absolute;left: -551px;top: 217px;color: #5b68ac;font-size: 26px;display: none;}
+.select-box .location-45 input:hover ~ i{display: block;}
+.select-box  .location-45 input:checked ~ i{display: block;}
+
+.select-box .location-46 .iconfont{position: absolute;left: -583px;top: 192px;color: #5b68ac;font-size: 26px;display: none;}
+.select-box .location-46 input:hover ~ i{display: block;}
+.select-box  .location-46 input:checked ~ i{display: block;}
+
+.select-box .location-47 .iconfont{position: absolute;left: -659px;top: 52px;color: #5b68ac;font-size: 26px;display: none;}
+.select-box .location-47 input:hover ~ i{display: block;}
+.select-box  .location-47 input:checked ~ i{display: block;}
+
+.select-box .location-48 .iconfont{position: absolute;left: -731px;top: -16px;color: #5b68ac;font-size: 26px;display: none;}
+.select-box .location-48 input:hover ~ i{display: block;}
+.select-box  .location-48 input:checked ~ i{display: block;}
+
+.map canvas{position: absolute;display:none;}
+.map .from-42-to-47{top: 360px;left: 440px;}
+.map .from-20-to-47{top: 350px;left: 470px;}
+.map .from-20-to-21{top: 315px;left: 490px;}
+.map .from-17-to-20{top: 335px;left: 510px;}
+.map .from-17-to-42{top: 405px;left: 460px;}
+.map .from-17-to-18{top: 355px;left: 570px;}
+.map .from-18-to-19{top: 315px;left: 580px;}
+.map .from-12-to-17{top: 355px;left: 560px;}
+.map .from-14-to-19{top: 265px;left: 580px;}
+.map .from-21-to-23{top: 255px;left: 480px;}
+.map .from-21-to-24{top: 255px;left: 480px;}
+.map .from-47-to-48{top: 250px;left: 340px;}
+.map .from-26-to-47{top: 250px;left: 340px;}
+.map .from-26-to-37{top: 250px;left: 340px;}
+.map .from-25-to-26{top: 250px;left: 340px;}
+.map .from-25-to-48{top: 250px;left: 340px;}
+.map .from-24-to-25{top: 250px;left: 340px;}
+.map .from-25-to-30{top: 190px;left: 380px;}
+.map .from-25-to-28{top: 190px;left: 380px;}
+.map .from-23-to-24{top: 190px;left: 380px;}
+.map .from-14-to-23{top: 190px;left: 380px;}
+.map .from-12-to-14{top: 190px;left: 380px;}
+.map .from-14-to-22{top: 190px;left: 380px;} 
+.map .from-1-to-41{top: 530px;left: 200px;} 
+.map .from-1-to-2{top: 590px;left: 720px;}
+.map .from-1-to-3{top: 532px;left: 660px;}
+.map .from-3-to-4{top: 462px;left: 610px;}
+.map .from-4-to-16{top: 482px;left: 520px;}
+.map .from-16-to-42{top: 432px;left:460px;}
+.map .from-16-to-43{top: 472px;left:495px;}
+.map .from-42-to-43{top: 432px;left:455px;} 
+.map .from-17-to-43{top: 412px;left:465px;}
+.map .from-16-to-17{top: 412px;left:515px;}
+.map .from-17-to-42{top: 417px;left:455px;}
+.map .from-3-to-5{top: 467px;left:645px;}
+.map .from-15-to-17{top: 417px;left:555px;}
+.map .from-12-to-15{top: 352px;left:575px;}
+.map .from-4-to-17{top: 402px;left:565px;}
+.map .from-5-to-15{top: 422px;left:625px;}
+.map .from-5-to-6{top: 422px;left:685px;}
+.map .from-6-to-8{top: 402px;left:685px;}
+.map .from-6-to-7{top: 402px;left:685px;}
+.map .from-12-to-13{top: 302px;left:625px;}
+.map .from-11-to-13{top: 302px;left:625px;}
+.map .from-10-to-11{top: 302px;left:625px;}
+.map .from-8-to-10{top: 302px;left:625px;}
+.map .from-8-to-15{top: 302px;left:625px;}
+.map .from-9-to-10{top: 302px;left:625px;}
+.map .from-7-to-9{top: 302px;left:625px;}
+.map .from-33-to-34{top: 50px;left: 290px;}
+.map .from-31-to-33{top: 80px;left: 320px;}
+.map .from-29-to-31{top: 110px;left: 360px;}
+.map .from-29-to-32{top: 110px;left: 340px;}
+.map .from-29-to-30{top: 160px;left: 360px;}
+.map .from-28-to-30{top: 190px;left: 397px;}
+.map .from-28-to-29{top: 160px;left: 360px;}
+.map .from-24-to-28{top: 205px;left: 450px;}
+.map .from-24-to-27{top: 200px;left: 480px;}
+.map .from-29-to-35{top: 160px;left: 300px;}
+.map .from-30-to-37{top: 200px;left: 320px;}
+.map .from-22-to-31{top: 100px;left: 360px;}
+.map .from-27-to-31{top: 100px;left: 360px;}
+.map .from-22-to-27{top: 100px;left: 360px;}
+.map .from-40-to-41{top: 450px;left: 200px;}
+.map .from-40-to-45{top: 470px;left: 220px;}
+.map .from-44-to-45{top: 470px;left: 420px;}
+.map .from-44-to-46{top: 470px;left: 440px;}
+.map .from-43-to-46{top: 470px;left: 470px;}
+.map .from-39-to-42{top: 330px;left: 370px;}
+.map .from-37-to-39{top: 300px;left: 350px;}
+.map .from-35-to-37{top: 250px;left: 320px;}
+.map .from-36-to-37{top: 280px;left: 310px;}
+.map .from-36-to-38{top: 280px;left: 290px;}
+.map .from-38-to-40{top: 320px;left: 200px;}
+.map .from-38-to-41{top: 320px;left: 200px;}
+.map .from-21-to-48{top: 280px;left: 420px;}
+.map .from-22-to-24{top: 200px;left: 420px;}
+.map .from-35-to-36{top: 200px;left: 300px;}
+.map .from-39-to-48{top: 200px;left: 360px;}
+.map .from-42-to-48{top: 230px;left: 360px;}
+.map .from-4-to-15{top: 270px;left: 550px;}
+.map .from-6-to-15{top: 270px;left: 590px;}
+.map .from-18-to-20{top: 270px;left: 500px;}
+.map .from-19-to-21{top: 270px;left: 500px;}
+.map .from-12-to-19{top: 270px;left: 530px;}
+.map .from-20-to-48{top: 270px;left: 480px;}
